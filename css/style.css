@@ -68,7 +68,7 @@ section {
    display: inline-block;
    padding: 1rem 3rem;
    border-radius: .5rem;
-   background-color: var(--blue);
+   /* background-color: var(--blue); */
    font-size: 1.7rem;
    color: white;
 }
