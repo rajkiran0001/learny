@@ -138,7 +138,7 @@ section {
 
 .header .logo {
    font-size: 2rem;
-   color: var(--black);
+   color: var(--blue);
 }
 
 .header .logo span {
@@ -550,15 +550,18 @@ section {
    transition: 0.5s;
 }
 
-.tbody .container1 .card1:nth-child(1) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(1) .box1 .content1 a, 
+.tbody .container1 .card1:nth-child(4) .box1 .content1 a {
    background: #2196f3;
 }
 
-.tbody .container1 .card1:nth-child(2) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(2) .box1 .content1 a,
+.tbody .container1 .card1:nth-child(5) .box1 .content1 a {
    background: #e91e63;
 }
 
-.tbody .container1 .card1:nth-child(3) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(3) .box1 .content1 a,
+.tbody .container1 .card1:nth-child(6) .box1 .content1 a {
    background: #23c186;
 }
 
@@ -712,7 +715,7 @@ section {
  }
  .content .left-side .details i{
    font-size: 30px;
-   color: #3e2093;
+   color: #00b8b8;
    margin-bottom: 10px;
  }
  .content .left-side .details .topic{
@@ -731,7 +734,7 @@ section {
  .content .right-side .topic-text{
    font-size: 23px;
    font-weight: 600;
-   color: #3e2093;
+   color: var(--black);
  }
  .right-side .input-box{
    height: 50px;
@@ -768,12 +771,12 @@ section {
    border: none;
    padding: 8px 16px;
    border-radius: 6px;
-   background: #3e2093;
+   background: #00b8b8;
    cursor: pointer;
    transition: all 0.3s ease;
  }
  .button input[type="button"]:hover{
-   background: #5029bc;
+   background: #00b8b8;
  }
  
  @media (max-width: 950px) {
