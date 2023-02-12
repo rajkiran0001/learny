@@ -288,7 +288,7 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="topic-text">Send us your questions and feedbacks</div>
+                    <div class="topic-text">Registration / Send us your questions and feedbacks</div>
                     <p>If you have any questions or feedbacks, you can send us
                         message
                         from here. It's our pleasure to help you.</p>
@@ -315,12 +315,19 @@
                             </select>
                         </div>
                         <div class="input-box">
-                            <input type="text" name="Lv"
-                                placeholder="Your language level (Beginner/Intermediate/Advanced)">
+                            <select name="Subject">
+                                <option value="" disabled selected>Select your Language Level</option>
+                                <option value="course">German A1</option>
+                                <option value="feedback">German A2</option>
+                                <option value="feedback">German B1</option>
+                                <option value="feedback">English Beginner</option>
+                                <option value="feedback">English Intermediate</option>
+                                <option value="feedback">English Advanced</option>
+                            </select>
                         </div>
                         <div class="input-box">
                             <select name="Subject">
-                                <option value="" disabled selected>Select your course</option>
+                                <option value="" disabled +  >Select your course</option>
                                 <option value="course">German A1</option>
                                 <option value="feedback">German A2</option>
                                 <option value="feedback">German B1</option>
