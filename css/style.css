@@ -878,7 +878,19 @@ section {
    .footer {
       padding-left: 150px;
    }
+   .legal {
+      text-align: center;
+   }
+   .nav__item {
+      padding-left: 100px;
+   }
 
+}
+
+@media (max-width:767px) {
+   .nav__item {
+      padding-left: 0px;
+   }
 }
 
 @media screen and (max-width: 767px) {
