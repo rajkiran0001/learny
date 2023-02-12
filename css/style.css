@@ -419,107 +419,6 @@ section {
 
 
 
-
-
-
-
-/* media queries  */
-
-@media (max-width:991px) {
-
-   html {
-      font-size: 55%;
-   }
-
-   .header .link-btn {
-      display: none;
-   }
-
-   section {
-      padding: 5rem 2rem;
-   }
-
-}
-
-@media (max-width:768px) {
-
-   section {
-      padding: 3rem 1rem;
-   }
-
-   #menu-btn {
-      display: inline-block;
-      transition: .2s linear;
-   }
-
-   #menu-btn.fa-times {
-      transform: rotate(180deg);
-   }
-
-   .header .nav {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      background-color: var(--white);
-      border-top: var(--border);
-      border-bottom: var(--border);
-      padding: 1rem 0;
-      text-align: center;
-      flex-flow: column;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition: .2s linear;
-   }
-
-   .header .nav.active {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-   }
-
-   .header .nav a {
-      margin: 1rem 0;
-      font-size: 2rem;
-   }
-
-   .home {
-      background-position: left;
-   }
-
-   .home .content {
-      width: auto;
-   }
-
-}
-
-@media (max-width:450px) {
-
-   html {
-      font-size: 50%;
-   }
-
-   .home .content h3 {
-      font-size: 4rem;
-   }
-
-   .heading {
-      font-size: 3rem;
-   }
-
-}
-
-@media screen and (max-width: 767px) {
-   .whatsapp-icon {
-       margin-top: 10px;
-   }
-
-   .whatsapp_float {
-       width: 40px;
-       height: 40px;
-       bottom: 20px;
-       right: 10px;
-       font-size: 22px;
-   }
-}
-
 .tbody {
    display: flex;
    justify-content: center;
@@ -551,17 +450,20 @@ section {
 }
 
 .tbody .container1 .card1:nth-child(1) .box1 .content1 a, 
-.tbody .container1 .card1:nth-child(4) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(4) .box1 .content1 a,
+.tbody .container1 .card1:nth-child(7) .box1 .content1 a {
    background: #2196f3;
 }
 
 .tbody .container1 .card1:nth-child(2) .box1 .content1 a,
-.tbody .container1 .card1:nth-child(5) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(5) .box1 .content1 a,
+.tbody .container1 .card1:nth-child(8) .box1 .content1 a {
    background: #e91e63;
 }
 
 .tbody .container1 .card1:nth-child(3) .box1 .content1 a,
-.tbody .container1 .card1:nth-child(6) .box1 .content1 a {
+.tbody .container1 .card1:nth-child(6) .box1 .content1 a,
+.tbody .container1 .card1:nth-child(9) .box1 .content1 a {
    background: #23c186;
 }
 
@@ -778,6 +680,220 @@ section {
  .button input[type="button"]:hover{
    background: #00b8b8;
  }
+ .footer {
+   display: flex;
+   flex-flow: row wrap;
+   padding: 30px 30px 20px 100px;
+   color: #2f2f2f;
+   background-color: #fff;
+   border-top: 1px solid #e5e5e5;
+ }
+ 
+ .footer > * {
+   flex:  1 ;
+ }
+ 
+ .footer__addr {
+   margin-right: 1.25em;
+   margin-bottom: 2em;
+ }
+ 
+ .footer__logo {
+   font-family: 'Pacifico', cursive;
+   font-weight: 400;
+   text-transform: lowercase;
+   font-size: 1.5rem;
+ }
+ 
+ .footer__addr h2 {
+   margin-top: 1.3em;
+   font-size: 15px;
+   font-weight: 400;
+ }
+ 
+ .nav__title {
+   font-weight: 400;
+   font-size: 15px;
+ }
+ 
+ .footer address {
+   font-style: normal;
+   color: #999;
+ }
+ 
+ .footer__btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 36px;
+   max-width: max-content;
+   background-color: rgb(33, 33, 33, 0.07);
+   border-radius: 100px;
+   color: #2f2f2f;
+   line-height: 0;
+   margin: 0.6em 0;
+   font-size: 1rem;
+   padding: 0 1.3em;
+ }
+ 
+ .footer ul {
+   list-style: none;
+   padding-left: 0;
+ }
+ 
+ .footer li {
+   line-height: 2em;
+ }
+ 
+ .footer a {
+   text-decoration: none;
+ }
+ 
+ 
+ .footer__nav > * {
+   display: flex;
+   margin-right: 1.25em;
+ }
+
+  .nav__item {
+      display: flex;
+ }
+ 
+ 
+ .nav__ul a {
+   color: #212529;
+ }
+ 
+ .nav__ul--extra {
+   column-count: 2;
+   column-gap: 1.25em;
+ }
+ 
+ .legal {
+   color: #212529;
+ }
+   
+ .legal__links {
+   /* display: flex; */
+   align-items: center;
+ }
+ 
+ .heart {
+   color: #2f2f2f;
+ }
+
+ /* media queries  */
+
+@media (max-width:991px) {
+
+   html {
+      font-size: 55%;
+   }
+
+   .header .link-btn {
+      display: none;
+   }
+
+   section {
+      padding: 5rem 2rem;
+   }
+
+}
+
+@media (max-width:768px) {
+
+   section {
+      padding: 3rem 1rem;
+   }
+
+   #menu-btn {
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times {
+      transform: rotate(180deg);
+   }
+
+   .header .nav {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      padding: 1rem 0;
+      text-align: center;
+      flex-flow: column;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .nav.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .nav a {
+      margin: 1rem 0;
+      font-size: 2rem;
+   }
+
+   .home {
+      background-position: left;
+   }
+
+   .home .content {
+      width: auto;
+   }
+
+}
+
+@media (max-width:450px) {
+
+   html {
+      font-size: 50%;
+   }
+
+   .home .content h3 {
+      font-size: 4rem;
+   }
+
+   .heading {
+      font-size: 3rem;
+   }
+
+}
+
+@media (max-width:750px) {
+
+   .footer {
+      padding-left: 50px;
+   }
+
+}
+
+@media (min-width:767px) {
+
+   .footer {
+      padding-left: 150px;
+   }
+
+}
+
+@media screen and (max-width: 767px) {
+   .whatsapp-icon {
+       margin-top: 10px;
+   }
+
+   .whatsapp_float {
+       width: 40px;
+       height: 40px;
+       bottom: 20px;
+       right: 10px;
+       font-size: 22px;
+   }
+}
  
  @media (max-width: 950px) {
    .containerForm{
@@ -812,4 +928,28 @@ section {
     margin-left: 0;
   }
  }
+
+ @media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 1 0px;
+  }
+}
  
