@@ -1,0 +1,1 @@
+- Open the project in vs code and start the live server

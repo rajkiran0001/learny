@@ -8,6 +8,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
         /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
+        .inner-order {
+            color: black;
+            display: inline-block;
+            margin: 5px;
+        }
+        .outer-order {
+            text-align: center
+        }
     </style>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,7 +27,7 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Learny</title>
+    <title>R teaching</title>
 </head>
 
 <body>
@@ -27,16 +35,28 @@
     <header class="header fixed-top active">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <a href="#home" class="logo"><i class="fa-solid fa-graduation-cap"></i> Learny</a>
+                <a href="/" class="logo"><i class="fa-solid fa-graduation-cap"></i> <b>R teaching </b><i>The learning hub</i></a>
                 <nav class="nav">
                     <a href="#home">home</a>
-                    <a href="#about">about</a>
                     <a href="#courses">courses</a>
-                    <!-- <a href="#services">our services</a> -->
                     <!-- <a href="#reviews">reviews</a> -->
                     <a href="#contact">contact</a>
-                    <a href="#jobs">jobs </a>
-                    <a href="#faq">faq</a>
+                    <a href="jobs.html">jobs </a>
+                    <a href="faq.html">faq</a>
+                    <!-- <a href="#about">about</a> -->
+                    <div class="parent">
+                    <a class="image1 login" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="login" title="Login"></a>
+                        <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
+                            <input type="hidden" name="currency_code" value="USD" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
+                    </div>
+                    <div class="parent2">
+                      <p class="image3"><b>Stripe or other payment methods</b></p>
+                      <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage" title="Login"></a>
+                    </div>
 
                 </nav>
                 <a href="#contact" class="link-btn">course registration</a>
@@ -49,7 +69,7 @@
         <div class="container">
             <div class="row min-vh-100 align-items-center">
                 <div class="bg-text">
-                    <h3 id="test2">You will learn your wishes !</h3>
+                    <h3 id="test2">Here You will learn what you would like to learn with best experience and satisfaction</h3>
                     <p id="test">We offer a host of courses and services, which are founded on the principles of quick
                         learning</p>
                     <!-- <a href="#contact" class="link-btn">make appointment</a> -->
@@ -63,35 +83,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 image">
-                    <img src="images/about-img.jpg" class="w-100 mb-5 mb-md-0" alt="">
-                </div>
-                <div class="col-md-6 content">
-                    <!-- <span>about the course</span> -->
-                    <h3>structure</h3>
-                    <p>once you have in contact with us, you will be given a 10 minites test to access your level. Then
-                        you will be contacted to attend the available courses. Each term there is a good number of
-                        events where you can further improve your Skills.
-                        use methods which promote natural learning for beginners starting, as a child might, with
-                        listening and speaking which then naturally progress to the written word.
 
-                        This approach differs from conventional methods, where teaching reading and writing skills first
-                        can often leave students with little confidence and ability to communicate and use their new
-                        language in the real world.
-                        Not only is our way a successful means to start speaking a foreign language, learning can be a
-                        lot of fun, too.
-                    </p>
-                    <a href="#contact" class="link-btn">make appointment</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    </div>
 
     <div class="tbody" id="courses">
         <div class="container1">
@@ -102,10 +94,10 @@
                         <h3>German A1 Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/test.html">Read More</a>
+                        <p>Times: Contact Us / look Plan</p>
+                        <a href="/read_more/germanA1.html">Read More</a>
                         <div class="wrapper two">
-                            <div class="neon">
+                            <div class="neon" href="#contact" >
                                 <h3 class="remove_uline">Free Course</h3>
                             </div>
                         </div>
@@ -120,8 +112,8 @@
                         <h3>German A2 Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="#">Read More</a>
+                        <p>Times: Contact Us / look Plan</p>
+                        <a href="/read_more/germanA2.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -138,8 +130,8 @@
                         <h3>German B1 Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Times: Contact Us / look Plan </p>
+                        <a href="/read_more/germanB1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -155,8 +147,8 @@
                         <h3>English Beginner Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Times: Contact Us / look Plan</p>
+                        <a href="/read_more/englishA1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -172,8 +164,8 @@
                         <h3>English Intermediate Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Times: Contact Us / look Plan </p>
+                        <a href="/read_more/englishA2.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -188,26 +180,9 @@
                         <h2>06</h2>
                         <h3>English Advanced Course</h3>
                         <p>Duration: 4 weeks / 10 hours</p>
-                        <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
-                        <div class="wrapper two">
-                            <div class="neon">
-                                <h3 class="remove_uline">Free Course</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="box1">
-                    <div class="content1">
-                        <h2>06</h2>
-                        <h3>Web development Beginner Course</h3>
-                        <p>Duration: 4 weeks / 10 hours</p>
-                        <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Days: Fri, Sat, Sun</p>
+                        <p>Times: Contact Us / look Plan</p>
+                        <a href="/read_more/englishB1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -220,11 +195,11 @@
                 <div class="box1">
                     <div class="content1">
                         <h2>07</h2>
-                        <h3>Just Listening Person</h3>
+                        <h3>Bible Blessings</h3>
                         <p>Duration: 30 Mins / 1 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Times: To Be Displayed </p>
+                        <a href="/read_more/bibleBlessings.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Session</h3>
@@ -240,8 +215,8 @@
                         <h3>Yoga Sessions</h3>
                         <p>Duration: 30 Mins / 1 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
-                        <p>Times: Sat & Sun: 10am - 12pm or 2pm - 6pm Fri: 7pm - 9pm </p>
-                        <a href="/">Read More</a>
+                        <p>Times: Times: To Be Displayed </p>
+                        <a href="/read_more/yoga.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Session</h3>
@@ -250,7 +225,37 @@
                     </div>
                 </div>
             </div>
+            <a href="#contact" class="link-btn">make appointment</a>
         </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 image">
+                    <img src="images/about-img.jpg" class="w-100 mb-5 mb-md-0" alt="">
+                </div>
+                <div class="col-md-6 content">
+                    <!-- <span>about the course</span> -->
+                    <h3>structure</h3>
+                    <p>Our online courses allow you to learn from the comfort and safety of your own home and to improve and apply your skills in an one-to-one or groups.
+                         All you need is a PC, tablet or smartphone equipped with a microphone and speaker, a reliable internet connection. 
+                         Our teachers make contact with you at your place. Our online courses are suitable for students or people who want to improve their skills quickly.
+                         You learn in standardized learning groups with motivated participants from all over the world. Here you will enjoy learning.
+                        You need to contact us via our website form submition, email or whatsapp. Once you are in contact with us, based on 
+                        the course availability and free time slot you will receive
+                        a confirmation for course registration with the time slot reserved for you. You will receive futher steps for joining the online classes. We promote natural learning for beginners, 
+                        intermediate and advanced learners,
+                        We follow quick and effective approach that differs from conventional methods, where students or learners ability to communicate and use their new
+                        skills in the real world increase drastically within a short time.
+                    </p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     </div>
     <!-- <form action="https://formsubmit.co/f536374b8490b7e7da7df6ae8b5b711c" method="POST">
         <input type="hidden" name="_captcha" value="false">
@@ -274,12 +279,12 @@
                     <div class="phone details">
                         <i class="fas fa-phone-alt"></i>
                         <div class="topic">Phone</div>
-                        <div class="text-one">+918489336961</div>
+                        <div class="text-one">+4917697761632</div>
                     </div>
                     <div class="email details">
                         <i class="fas fa-envelope"></i>
                         <div class="topic">Email</div>
-                        <div class="text-one">learngf@gmail.com</div>
+                        <div class="text-one">info.R teaching@gmail.com</div>
                     </div>
                     <div class="email details">
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
@@ -294,12 +299,12 @@
                         from here. It's our pleasure to help you.</p>
                     <form action="https://formsubmit.co/f536374b8490b7e7da7df6ae8b5b711c" method="POST">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://learny01.netlify.app/test.html">
+                        <input type="hidden" name="_next" value="https://learny01.netlify.app/formSubmit.html">
                         <div class="input-box">
-                            <input type="text" name="Name" placeholder="Enter your name">
+                            <input type="text" name="Name" placeholder="Enter your name" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" name="Email" placeholder="Enter your email">
+                            <input type="text" name="Email" placeholder="Enter your email" required>
                         </div>
                         <div class="input-box">
                             <input type="text" name="Phone" placeholder="Your phone number (optional)">
@@ -309,20 +314,9 @@
                         </div>
                         <div class="input-box">
                             <select name="Select Course">
-                                <option value="" disabled selected>Select your Form Type</option>
+                                <option value="" disabled selected>Select your question Type</option>
                                 <option value="course">Courses</option>
                                 <option value="feedback">Feedback</option>
-                            </select>
-                        </div>
-                        <div class="input-box">
-                            <select name="Subject">
-                                <option value="" disabled selected>Select your Language Level</option>
-                                <option value="course">German A1</option>
-                                <option value="feedback">German A2</option>
-                                <option value="feedback">German B1</option>
-                                <option value="feedback">English Beginner</option>
-                                <option value="feedback">English Intermediate</option>
-                                <option value="feedback">English Advanced</option>
                             </select>
                         </div>
                         <div class="input-box">
@@ -334,19 +328,20 @@
                                 <option value="feedback">English Beginner</option>
                                 <option value="feedback">English Intermediate</option>
                                 <option value="feedback">English Advanced</option>
-                                <option value="feedback">Web Development Beginner</option>
-                                <option value="feedback">Just Listening Person</option>
+                                <option value="feedback">Jesus Blessings</option>
                                 <option value="feedback">Yoga Session</option>
                             </select>
                         </div>
                         <div class="input-box message-box">
                             <textarea name="content" id="" cols="30" rows="10"
-                                placeholder="Enter your Message"></textarea>
+                                placeholder="Enter your Message" required></textarea>
                         </div>
                         <div class="button">
                             <input type="submit" value="Submit">
                         </div>
                     </form>
+                </br>
+                   <p> By submitting this form you agree to our privacy policy.</p>
                 </div>
             </div>
         </div>
@@ -357,50 +352,26 @@
     <br>
     <footer class="footer">
             <div class="footer__addr">
-                <h1 class="footer__logo">Learny</h1>
-
-                <h2>Contact</h2>
-
-                <address>
-                    straße in germany<br>
-
-                    <a class="footer__btn" href="mailto:learny@gmail.com">Email Us</a>
-                </address>
+                <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> Contact <a class="footer__btn" href="mailto:info.R teaching@gmail.com">Email Us</a></h1>
             </div>
 
-            <ul class="footer__nav">
-                <li class="nav__item">
-                    <!-- <h2 class="nav__title">Media</h2> -->
-
-                    <ul class="nav__ul">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Ads</a>
-                        </li>
-                        <li>
-                            <a href="#">Impressions</a>
-                        </li>
-
-                        <li>
-                            <a href="#">AGB</a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
+            <div >
+                <nav class="outer-order">
+                    <a href="#home" class="inner-order">home</a>
+                    <a href="#courses" class="inner-order">courses</a>
+                    <!-- <a href="#reviews">reviews</a> -->
+                    <a href="#contact" class="inner-order">contact</a>
+                    <a href="jobs.html" class="inner-order">jobs </a>
+                    <a href="faq.html" class="inner-order">faq</a>
+                    <a href="#about" class="inner-order">about</a>
+                    <a href="/impressum.html" class="inner-order">Impressions</a>
+                    <a href="/gtc.html" class="inner-order">GTC</a>
+                </nav>
+                
+            </div>
 
             <div class="legal">
-                <p>&copy; COPYRIGHT LEARNY. All rights reserved.</p>
+                <p>&copy; COPYRIGHT R teaching. All rights reserved.</p>
             </div>
     </footer>
     <a href="https://wa.me/918489336961" class="whatsapp_float" target="_blank" rel="noopener noreferrer">

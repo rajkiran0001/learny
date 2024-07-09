@@ -154,7 +154,48 @@ section {
 .header .nav a:hover {
    color: var(--blue);
 }
-
+.header .nav .login {
+   background: url(../images/user.png) no-repeat 6px center;
+   width: 138px;
+   height: 65px;
+   display: block;
+}
+.header .nav .payImage {
+   background: url(../images/globalPayImage.png) no-repeat 6px center;
+   width: 138px;
+   height: 65px;
+   display: block;
+}
+.header .nav .parent {
+   position: relative;
+   top: -20px;
+   left: 0;
+}
+.header .nav .image1  {
+   position: relative;
+   top: -11px;
+   left: 0;
+}
+.header .nav .image2  {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+}
+.header .nav .parent2 {
+   position: relative;
+   top: -20px;
+   left: 0;
+}
+.header .nav .image3  {
+   position: relative;
+   top: 15px;
+   left: 25px;
+}
+.header .nav .image4  {
+   position: absolute;
+   top: 21px;
+   left: -15px;
+}
 #menu-btn {
    font-size: 2.5rem;
    color: var(--black);
@@ -722,11 +763,7 @@ section {
  }
  
  .footer__btn {
-   display: flex;
-   align-items: center;
-   justify-content: center;
    height: 36px;
-   max-width: max-content;
    background-color: rgb(33, 33, 33, 0.07);
    border-radius: 100px;
    color: #2f2f2f;
