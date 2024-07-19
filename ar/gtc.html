@@ -36,7 +36,15 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>R teaching</title>
 </head>
@@ -46,17 +54,35 @@
     <header class="header fixed-top active">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <img src="/images/logo.png" alt="" class="logo"></img>
+                <img src="../images/logo.png" alt="" class="logo"></img>
                 <nav class="nav">
                     <a href="#home">home</a>
-                    <a href="/#courses">courses</a>
+                    <a href="/ar/#courses">الدورات</a>
                     <!-- <a href="#reviews">reviews</a> -->
-                    <a href="/#contact">contact</a>
-                    <a href="jobs.html">jobs </a>
+                    <a href="/ar/#contact">اتصال</a>
+                    <a href="jobs.html">وظائف </a>
                     <a href="faq.html">faq</a>
                     <!-- <a href="#about">about</a> -->
+                </nav>
+                <div class="bs-example">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li role="presentation" > <a href="/en"  id="drop4" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="flag-icon flag-icon-ae"></span> عربي <span class="caret"></span> </a>
+                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                          <li><a href="/en"><span class="flag-icon flag-icon-us"></span> إنجليزي</a></li>
+                          <li><a href="/ch"><span class="flag-icon flag-icon-ch"></span> صينى</a></li>
+                          <li><a href="/sp"><span class="flag-icon flag-icon-es"></span> الأسبانية</a></li>
+                          <li><a href="/ar"><span class="flag-icon flag-icon-ae"></span> عربي</a></li>
+                          <li><a href="/hi"><span class="flag-icon flag-icon-in"></span> الهندية</a></li>
+                          <li><a href="/fr"><span class="flag-icon flag-icon-fr"></span> فرنسي</a></li>
+                          <li><a href="/ge"><span class="flag-icon flag-icon-de"></span> ألمانية</a></li>
+
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                    <a href="#contact" class="link-btn">يسجل</a>
                     <div class="parent">
-                    <a class="image1 login" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="login" title="Login"></a>
+                    <p class="image1 login" class="login" title="Login"><b>PayPal</b></p>
                         <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick" />
                             <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
@@ -65,13 +91,10 @@
                           </form>
                     </div>
                     <div class="parent2">
-                      <p class="image3"><b>Stripe or other payment methods</b></p>
+                      <p class="image3"><b>Stripe/آحرون</b></p>
                       <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage" title="Login"></a>
                     </div>
-
-                </nav>
-                <a href="#contact" class="link-btn">course registration</a>
-                <div id="menu-btn" class="fas fa-bars"></div>
+                </div> 
             </div>
         </div>
     </header>
@@ -81,51 +104,51 @@
             <div class="row min-vh-100 align-items-center">
                 <div class=" " id="courses">
                     <div class="test">
-                        <h1>Terms and Conditions</h1>
+                        <h1>الأحكام والشروط</h1>
                         <div class="cols-wrapper cols-2">
                             <div class="col">
-                            <h3>1. Scope</h3>
-                            <p>The following General Terms and Conditions (hereinafter referred to as “GTC”) apply to the booking of and participation in courses (hereinafter referred to as “course”) at rtraining The Learning Hub by the course participant. The terms and conditions of rtraining The Learning Hub apply exclusively. Any terms and conditions to the contrary are hereby expressly contradicted.</p>
-                            <h3>2. <strong>Conditions of participation for language courses</strong></h3>
-                            <p>2.1 Currently offered courses including scope, content, dates, times, etc can be seen on the website or discussed by contacting us.</p>
-                            <p>2.2  We offer both free and paid courses. A paid courses (A1, A2 etc. or beginner, intermediate, etc) comprises 5 to 10 hours each.</p>
-                            <p>2.3 One lesson is 45 to 60 minutes.</p>
-                            <p>2.4 The minimum age to participate in a course is 5.</p>
-                            <p>2.5 Courses are offered regularly on Friday, Saturday and Sunday. There could be classes on public holidays. Please check the schedule. The lessons missed as a result will not be made up at a later date, however if possible you can discuss about it with the teacher.</p>
-                            <p>2.6 The maximum number of participants in a course is ten, the minimum number of participants is one.</p>
-                            <p>2.7  If the teacher has not shown up during the class period or within 10 minutes after the class started, the money will be returned or the class will be postponed. The registered participants will be informed as soon as possible. The paid money will not be refunded, however you can reschedule the classes for later time after taking to the teacher.</p>
-                            <p>2.8 In the event of a sickness or illness of the teacher, the classes will be postponed. We will inform you 1 hour before the start of the class.</p>
-                            <h3>3. <strong>Registration and reservation</strong></h3>
-                            <p>3.1 Registration for a course must be made by contacting Erbee The Learning Hub via Whatapp, email or submitting the contact form in the website.</p>
-                            <p>3.2 After registering for the course, Erbee The Learning Hub will discuss the necessary details with the participant. Once these have been settled, the participant will receive a confirmation of registration.</p>
-                            <p>3.3.With confirmation of registration, the course is reserved for the participant.</p>
-                            <p>3.4 With confirmation of registration and invoice, the course is reserved for the participant for a maximum of seven days. During this time, payment of the course fee must be made in accordance with section 4.1. If no payment is made, the reservation is forfeited and rtraining Language School may give the place to another interested party. rtraining Language School is obligated to conduct the course only if the course fee has been received.</p>
-                            <p>3.5 Online Registration is possible. </p>
-                            <p>3.6 rtraining The Learning Hub reserves the right to schedule a vacation week. This will be communicated to the participants before they register for the course.</p>
-                            <h3>4. <strong>Payment of the course fee</strong></h3>
-                            <p>4.1 Payment can be done by bank transfer to an account, paypal, credit or debit card specified by rtraining The Learning Hub. Possible fees for foreign bank transfers are not covered by rtraining The Learning Hub and will be charged separately to the participant.</p>
-                            <p>4.2 Course and workbooks are not included in the course fees. The placement test and other materials are free of charge.</p>
-                            <h3>5. <strong>Interruptions</strong></h3>
-                            <p>5.1 An interruption of the booked course is usually not possible. However, in exceptional cases, an interruption may be requested and approved via email.</p>
-                            <p>5.2 In the event of (partial) non-participation in a booked course, there is no entitlement to (partial) reimbursement of the money paid.</p>
-                            <h3>6. <strong>Postponement and cancellation</strong></h3>
-                            <p>6.1 If participants are unable to attend the booked course, this must be communicated to rtraining The Learning Hub via email.</p>
-                            <p>6.2 In case of postponement or cancellation of a booked course, the money will not be refunded, however you can reschedule the classes for future dates.</p>
-                            <p>6.3.The course fee agreed upon at the time of registration and paid money is valid for a maximum of one year. In case of postponement to a later date, it is free of charge.</p>
-                            <p>6.4  rtraining The Learning Hub is not a Telc, Goethe or Test-Daf examination center and is therefore not authorized to administer these specific examinations or issue certificates.</p>
-                            <h3>7. <strong>Placement test</strong></h3>
-                            <p>7.1 Beforehand, If the participants needed they can take a placement test to determine their language level and join the classes.</p>
-                            <h3>8. <strong>Data protection</strong></h3>
-                            <p>8.1 rtraining The Learning Hub collects, processes and uses personal data of the participants in particular on the basis of consent, for the conclusion and fulfillment of the contract, on the basis of legal obligations or legitimate interests.</p>
-                            <p>8.2 The participants agree that the data will be collected and processed for the proper performance of the services offered. Should the data also be used for advertising purposes or in social networks, separate consent must be obtained from the participants.</p>
-                            <p>8.3 The participants can object to the use of their data at any time by sending an objection by e-mail to info.rtraining@gmail.com</p>
-                            <p>8.4 Further details on data protection can be found in the privacy policy of rtraining The Learning Hub, which can be accessed on the website  <a href="http://rtraining.de/">www.rtraining.de</a>.</p>
-                            <h3>9. <strong>Liability and compensation</strong></h3>
-                            <p>9.1 rtraining The Learning Hub does not assume any responsibility for participants, including minors.</p>
-                            <p>9.2 Any claims are not possible for the moment.</p>
-                            <p>9.3 Any other claims by participants are excluded. rtraining The Learning Hub is not liable in particular for the failure of its services due to force measures or other reasons beyond its control or for the failure to achieve a certain learning outcome. The specifications for achieving a course objective are based on many years of experience and may differ from the actual knowledge acquired in individual cases.</p>
-                            <p>9.4 rtraining The Learning Hub is also not responsible for any loss asked by the participants.</p>
-                            <p>Status: 01/2021</p>
+                            <h3> نِطَاق</h3>
+                            <p>تنطبق الشروط والأحكام العامة التالية (المشار إليها فيما يلي باسم "GTC") على الحجز والمشاركة في الدورات (المشار إليها فيما يلي باسم "الدورة التدريبية") في rtraining The Learning Hub بواسطة المشارك في الدورة. تنطبق شروط وأحكام تدريب مركز التعلم بشكل حصري. أي شروط وأحكام تتعارض مع هذا يتم تعارضها صراحةً.</p>
+                            <h3> <strong>شروط الاشتراك في دورات اللغة</strong></h3>
+                            <p>يمكن الاطلاع على الدورات المقدمة حاليًا بما في ذلك النطاق والمحتوى والتواريخ والأوقات وما إلى ذلك على الموقع الإلكتروني أو مناقشتها عن طريق الاتصال بنا.</p>
+                            <p>  نحن نقدم دورات مجانية ومدفوعة. تتكون الدورات المدفوعة (A1، A2 وما إلى ذلك أو المبتدئين والمتوسطين وما إلى ذلك) من 5 إلى 10 ساعات لكل منها.</p>
+                            <p> الدرس الواحد مدته 45 إلى 60 دقيقة.</p>
+                            <p> الحد الأدنى لسن المشاركة في الدورة هو 5 سنوات.</p>
+                            <p> يتم تقديم الدورات بانتظام أيام الجمعة والسبت والأحد. يمكن أن يكون هناك دروس في أيام العطل الرسمية. يرجى التحقق من الجدول الزمني. لن يتم تعويض الدروس التي فاتتك نتيجة لذلك في وقت لاحق، ولكن إذا أمكن يمكنك مناقشة ذلك مع المعلم.</p>
+                            <p> الحد الأقصى لعدد المشاركين في الدورة هو عشرة، والحد الأدنى لعدد المشاركين هو واحد.</p>
+                            <p>  إذا لم يحضر المعلم خلال فترة الفصل أو خلال 10 دقائق بعد بدء الفصل، فسيتم إرجاع الأموال أو سيتم تأجيل الفصل. سيتم إبلاغ المشاركين المسجلين في أقرب وقت ممكن. لن يتم استرداد الأموال المدفوعة، ولكن يمكنك إعادة جدولة الفصول الدراسية لوقت لاحق بعد اصطحابك إلى المعلم.</p>
+                            <p> في حالة مرض أو مرض المعلم، سيتم تأجيل الدروس. سنخبرك قبل ساعة واحدة من بدء الفصل.</p>
+                            <h3> <strong>التسجيل والحجز</strong></h3>
+                            <p> يجب أن يتم التسجيل للدورة عن طريق الاتصال بـ Erbee The Learning Hub عبر Whatsapp، والبريد الإلكتروني لإرسال نموذج الاتصال في الموقع.</p>
+                            <p> بعد التسجيل في الدورة، سيقوم Erbee The Learning Hub بمناقشة التفاصيل اللازمة مع المشارك. بمجرد تسوية هذه الأمور، سيحصل المشارك على تأكيد التسجيل.</p>
+                            <p> With confirmation of registration, the course is reserved for the participant.</p>
+                            <p> الدورة محجوزة للمشارك لمدة أقصاها سبعة أيام. خلال هذا الوقت، يجب أن يتم دفع رسوم الدورة وفقًا للقسم 4.1. إذا لم يتم سداد أي مبلغ، فسيتم إلغاء الحجز ويجوز لمدرسة rtraining Language School منح المكان لطرف آخر مهتم. تلتزم مدرسة rtraining للغات بإجراء الدورة فقط في حالة استلام رسوم الدورة.</p>
+                            <p> التسجيل عبر الإنترنت ممكن. </p>
+                            <p> تحتفظ R teaching The learning hub بالحق في جدولة أسبوع إجازة. وسيتم إبلاغ المشاركين بذلك قبل التسجيل في الدورة.</p>
+                            <h3> <strong>دفع رسوم الدورة</strong></h3>
+                            <p> يمكن أن يتم الدفع عن طريق التحويل المصرفي إلى حساب أو باي بال أو بطاقة الائتمان أو بطاقة الخصم المحددة بواسطة rtraining The Learning Hub. لا يغطي rtraining The Learning Hub الرسوم المحتملة للتحويلات المصرفية الأجنبية وسيتم تحصيلها بشكل منفصل من المشارك.</p>
+                            <p> لا يتم تضمين الدورات والكتب التدريبية في رسوم الدورة. اختبار تحديد المستوى والمواد الأخرى مجانية.</p>
+                            <h3> <strong>انقطاعات</strong></h3>
+                            <p> عادةً ما يكون انقطاع الدورة المحجوزة غير ممكن. ومع ذلك، في حالات استثنائية، قد يتم طلب المقاطعة والموافقة عليها عبر البريد الإلكتروني.</p>
+                            <p> في حالة عدم المشاركة (الجزئية) في الدورة المحجوزة، لا يوجد حق في استرداد (جزئي) للأموال المدفوعة.</p>
+                            <h3> <strong>التأجيل والإلغاء</strong></h3>
+                            <p> إذا لم يتمكن المشاركون من حضور الدورة التدريبية المحجوزة، فيجب إبلاغ ذلك إلى rtraining The Learning Hub عبر البريد الإلكتروني.</p>
+                            <p> في حالة تأجيل أو إلغاء الدورة المحجوزة، لن يتم استرداد الأموال، ولكن يمكنك إعادة جدولة الدروس في التواريخ المستقبلية.</p>
+                            <p>رسوم الدورة المتفق عليها عند التسجيل والمال المدفوع صالحة لمدة أقصاها سنة واحدة. وفي حالة التأجيل إلى تاريخ لاحق فهو مجاني.</p>
+                            <p>  التدريب مركز التعلم ليس مركزًا لامتحانات Telc أو Goethe أو Test-Daf، وبالتالي فهو غير مصرح له بإدارة هذه الاختبارات المحددة أو إصدار الشهادات.</p>
+                            <h3> <strong>اختبار تحديد المستوى</strong></h3>
+                            <p> مسبقًا، إذا احتاج المشاركون، يمكنهم إجراء اختبار تحديد المستوى لتحديد مستوى لغتهم والانضمام إلى الفصول الدراسية.</p>
+                            <h3> <strong>حماية البيانات</strong></h3>
+                            <p> rtraining يقوم مركز التعلم بجمع ومعالجة واستخدام البيانات الشخصية للمشاركين على وجه الخصوص على أساس الموافقة، لإبرام العقد وتنفيذه، على أساس الالتزامات القانونية أو المصالح المشروعة.</p>
+                            <p> يوافق المشاركون على أنه سيتم جمع البيانات ومعالجتها من أجل الأداء السليم للخدمات المقدمة. وفي حالة استخدام البيانات أيضًا لأغراض إعلانية أو على شبكات التواصل الاجتماعي، فيجب الحصول على موافقة منفصلة من المشاركين.</p>
+                            <p> يمكن للمشاركين الاعتراض على استخدام بياناتهم في أي وقت عن طريق إرسال اعتراض عبر البريد الإلكتروني إلى info.rtraining@gmail.com</p>
+                            <p> يمكن العثور على مزيد من التفاصيل حول حماية البيانات في سياسة الخصوصية الخاصة بـ rtraining The Learning Hub، والتي يمكن الوصول إليها على الموقع الإلكتروني  <a href="http://rtraining.de/">www.rtraining.de</a>.</p>
+                            <h3> <strong>المسؤولية والتعويض</strong></h3>
+                            <p>rtraining لا يتحمل مركز التعلم أي مسؤولية تجاه المشاركين، بما في ذلك القصر.</p>
+                            <p> أي مطالبات غير ممكنة في الوقت الراهن.</p>
+                            <p> يتم استبعاد أي مطالبات أخرى من قبل المشاركين. rtraining The Learning Hub ليس مسؤولاً على وجه الخصوص عن فشل خدماته بسبب تدابير القوة أو لأسباب أخرى خارجة عن إرادته أو عن الفشل في تحقيق نتيجة تعليمية معينة. تعتمد مواصفات تحقيق هدف الدورة على سنوات عديدة من الخبرة وقد تختلف عن المعرفة الفعلية المكتسبة في الحالات الفردية.</p>
+                            <p> التدريب مركز التعلم ليس مسؤولاً أيضًا عن أي خسارة يطلبها المشاركون.</p>
+                            <p>حالة: 01/2021</p>
                             </div>
                             <div class="col nomargin"></div>
                             </div>
@@ -141,26 +164,26 @@
     <br>
     <footer class="footer">
         <div class="footer__addr">
-            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> Contact <a class="footer__btn" href="mailto:info.R teaching@gmail.com">Email Us</a></h1>
+            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> اتصال <a class="footer__btn" href="mailto:info.R teaching@gmail.com">Email Us</a></h1>
         </div>
 
         <div >
             <nav class="outer-order">
                 <a href="/" class="inner-order">home</a>
-                <a href="/#courses" class="inner-order">courses</a>
+                <a href="/ar/#courses" class="inner-order">الدورات</a>
                 <!-- <a href="#reviews">reviews</a> -->
-                <a href="/#contact" class="inner-order">contact</a>
-                <a href="jobs.html" class="inner-order">jobs </a>
+                <a href="/ar/#contact" class="inner-order">اتصال</a>
+                <a href="jobs.html" class="inner-order">وظائف </a>
                 <a href="faq.html" class="inner-order">faq</a>
                 <a href="#about" class="inner-order">about</a>
-                <a href="/impressum.html" class="inner-order">Impressions</a>
-                <a href="/gtc.html" class="inner-order">GTC</a>
+                <a href="./impressum.html" class="inner-order">انطباعات</a>
+                <a href="./gtc.html" class="inner-order">GTC</a>
             </nav>
             
         </div>
 
         <div class="legal">
-            <p>&copy; COPYRIGHT R teaching. All rights reserved.</p>
+            <p>&copy; COPYRIGHT R teaching. كل الحقوق محفوظة.</p>
         </div>
 </footer>
     <a href="https://wa.me/918489336961" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
