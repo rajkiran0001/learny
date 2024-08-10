@@ -44,9 +44,63 @@
 </head>
 
 <body>
-
     <header>
         <nav class=" header navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#courses">courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jobs.html">jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">faq</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li role="presentation"> <a href="/en" id="drop4" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false"> <span class="flag-icon flag-icon-us"></span>
+                                English <span class="caret"></span> </a>
+                            <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                                <li><a href="/en"><span class="flag-icon flag-icon-us"></span> English</a></li>
+                                <li><a href="/ch"><span class="flag-icon flag-icon-ch"></span> Chinese</a></li>
+                                <li><a href="/sp"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+                                <li><a href="/ar"><span class="flag-icon flag-icon-ae"></span> Arabic</a></li>
+                                <li><a href="/hi"><span class="flag-icon flag-icon-in"></span> Hindi</a></li>
+                                <li><a href="/fr"><span class="flag-icon flag-icon-fr"></span> French</a></li>
+                                <li><a href="/ge"><span class="flag-icon flag-icon-de"></span> German</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#contact">register</a>
+                    <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif"
+                            border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+                            alt="Buy Now" />
+                    </form>
+                </form>
+            </div>
+        </nav>
+        <!-- <nav class=" header navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light ">
             <img src="../images/logo.png" alt="" class="logo"></img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,14 +157,14 @@
                         </form>
                     </div>
                     <div class="parent2">
-                        <p class="image3"><b>Stripe/others</b></p>
+                        <p class="image3"><b>Others Payments</b></p>
                         <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage"
                             title="Login"></a>
                     </div>
                 </ul>
             </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
 
     <section class="home" id="home">
@@ -142,7 +196,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan</p>
-                        <a href="/read_more/germanA1.html">Read More</a>
+                        <a href="/course_read_more/germanA1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon" href="#contact">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -160,7 +214,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan</p>
-                        <a href="/read_more/germanA2.html">Read More</a>
+                        <a href="/course_read_more/germanA2.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -178,7 +232,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan </p>
-                        <a href="/read_more/germanB1.html">Read More</a>
+                        <a href="/course_read_more/germanB1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -195,7 +249,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan</p>
-                        <a href="/read_more/englishA1.html">Read More</a>
+                        <a href="/course_read_more/englishA1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -212,7 +266,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan </p>
-                        <a href="/read_more/englishA2.html">Read More</a>
+                        <a href="/course_read_more/englishA2.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -229,7 +283,7 @@
                         <p>Duration: 4 weeks / 10 hours</p>
                         <p>Days: Fri, Sat, Sun</p>
                         <p>Times: Contact Us / look Plan</p>
-                        <a href="/read_more/englishB1.html">Read More</a>
+                        <a href="/course_read_more/englishB1.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Course</h3>
@@ -242,11 +296,11 @@
                 <div class="box1">
                     <div class="content1">
                         <h2>07</h2>
-                        <h3>Bible Blessings</h3>
+                        <h3>Microsoft Word</h3>
                         <p>Duration: 30 Mins / 1 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: To Be Displayed </p>
-                        <a href="/read_more/bibleBlessings.html">Read More</a>
+                        <a href="/course_read_more/word.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Session</h3>
@@ -259,11 +313,11 @@
                 <div class="box1">
                     <div class="content1">
                         <h2>08</h2>
-                        <h3>Yoga Sessions</h3>
+                        <h3>Microsoft Excel</h3>
                         <p>Duration: 30 Mins / 1 hours</p>
                         <p>Dates: Fri, Sat, Sun</p>
                         <p>Times: To Be Displayed </p>
-                        <a href="/read_more/yoga.html">Read More</a>
+                        <a href="/course_read_more/excel.html">Read More</a>
                         <div class="wrapper two">
                             <div class="neon">
                                 <h3 class="remove_uline">Free Session</h3>
@@ -272,8 +326,25 @@
                     </div>
                 </div>
             </div>
-            <a href="#contact" class="link-btn">make appointment</a>
+            <div class="card1">
+                <div class="box1">
+                    <div class="content1">
+                        <h2>09</h2>
+                        <h3>Jesus Blessings</h3>
+                        <p>Duration: 30 Mins / 1 hours</p>
+                        <p>Dates: Fri, Sat, Sun</p>
+                        <p>Times: To Be Displayed </p>
+                        <a href="/course_read_more/jesusBlessing.html">Read More</a>
+                        <div class="wrapper two">
+                            <div class="neon">
+                                <h3 class="remove_uline">Free Session</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- <a href="#contact" class="link-btn">make appointment</a> -->
     </div>
 
     <section class="about" id="about">

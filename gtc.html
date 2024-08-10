@@ -9,6 +9,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
         /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
+        .alignment {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 20px;
+            padding: 100px 100px 100px 100px;
+        }
+
         .inner-order {
             color: black;
             display: inline-block;
@@ -43,22 +50,54 @@
 </head>
 
 <body>
+    <header>
+        <nav class=" header navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light ">
+            <img src="../images/logo.png" alt="" class="logo"></img>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-justified">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#courses">courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">faq</a>
+                    </li>
+                    <div>
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation"> <a href="/en" id="drop4" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false"> <span
+                                        class="flag-icon flag-icon-us"></span>
+                                    English <span class="caret"></span> </a>
+                                <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                                    <li><a href="/en"><span class="flag-icon flag-icon-us"></span> English</a></li>
+                                    <li><a href="/ch"><span class="flag-icon flag-icon-ch"></span> Chinese</a></li>
+                                    <li><a href="/sp"><span class="flag-icon flag-icon-es"></span> Spanish</a></li>
+                                    <li><a href="/ar"><span class="flag-icon flag-icon-ae"></span> Arabic</a></li>
+                                    <li><a href="/hi"><span class="flag-icon flag-icon-in"></span> Hindi</a></li>
+                                    <li><a href="/fr"><span class="flag-icon flag-icon-fr"></span> French</a></li>
+                                    <li><a href="/ge"><span class="flag-icon flag-icon-de"></span> German</a></li>
 
-    <header class="header fixed-top active">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <img src="/images/logo.png" alt="" class="logo"></img>
-                <nav class="nav">
-                    <a href="/">home</a>
-                    <a href="/#courses">courses</a>
-                    <!-- <a href="#reviews">reviews</a> -->
-                    <a href="/#contact">contact</a>
-                    <a href="jobs.html">jobs </a>
-                    <a href="faq.html">faq</a>
-                    <!-- <a href="#about">about</a> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="register ">
+                        <a href="#contact" class="link-btn">register</a>
+                    </div>
                     <div class="parent">
-                        <a class="image1 login" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="login"
-                            title="Login"></a>
+                        <p class="image1 login" class="login" title="Login"><b>PayPal</b></p>
                         <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick" />
                             <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
@@ -69,23 +108,21 @@
                         </form>
                     </div>
                     <div class="parent2">
-                        <p class="image3"><b>Stripe or other payment methods</b></p>
+                        <p class="image3"><b>Others Payments</b></p>
                         <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage"
                             title="Login"></a>
                     </div>
-
-                </nav>
-                <a href="#contact" class="link-btn">course registration</a>
-                <div id="menu-btn" class="fas fa-bars"></div>
+                </ul>
             </div>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <section class="home" id="home">
         <div class="container2">
             <div class="row min-vh-100 align-items-center">
                 <div class=" " id="courses">
-                    <div class="test">
+                    <div class="alignment">
                         <h1>Terms and Conditions</h1>
                         <div class="cols-wrapper cols-2">
                             <div class="col">
