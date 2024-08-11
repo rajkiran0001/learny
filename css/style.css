@@ -73,7 +73,7 @@ section {
    font-weight: bold;
    border: 3px solid #f1f1f1;
    position: relative;
-   top: 170px;
+   top: 25px;
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 2;
