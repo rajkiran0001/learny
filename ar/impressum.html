@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
+    <title>R teaching</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-
-        .container2 {
-            margin-top: 80px;
-
-        }
-
-        .test {
+        .alignment {
             background: rgba(0, 0, 0, 0.5);
             color: white;
             font-size: 20px;
@@ -29,105 +31,198 @@
         .outer-order {
             text-align: center
         }
-
-        /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
     </style>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- bootstrap cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="../css/style.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>R teaching</title>
 </head>
 
 <body>
-
-    <header class="header fixed-top active">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <img src="../images/logo.png" alt="" class="logo"></img>
-                <nav class="nav">
-                    <a href="#home">home</a>
-                    <a href="/ar/#courses">الدورات</a>
-                    <!-- <a href="#reviews">reviews</a> -->
-                    <a href="/ar/#contact">اتصال</a>
-                    <a href="jobs.html">وظائف </a>
-                    <a href="faq.html">faq</a>
-                    <!-- <a href="#about">about</a> -->
-                </nav>
-                <div class="bs-example">
-                    <ul class="nav nav-pills" role="tablist">
-                        <li role="presentation" > <a href="/ar"  id="drop4" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="flag-icon flag-icon-ae"></span> عربي <span class="caret"></span> </a>
-                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
-                          <li><a href="/en"><span class="flag-icon flag-icon-us"></span> إنجليزي</a></li>
-                          <li><a href="/ch"><span class="flag-icon flag-icon-ch"></span> صينى</a></li>
-                          <li><a href="/sp"><span class="flag-icon flag-icon-es"></span> الأسبانية</a></li>
-                          <li><a href="/ar"><span class="flag-icon flag-icon-ae"></span> عربي</a></li>
-                          <li><a href="/hi"><span class="flag-icon flag-icon-in"></span> الهندية</a></li>
-                          <li><a href="/fr"><span class="flag-icon flag-icon-fr"></span> فرنسي</a></li>
-                          <li><a href="/ge"><span class="flag-icon flag-icon-de"></span> ألمانية</a></li>
-
-                        </ul>
-                      </li>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/ar/">
+                    <img src="../images/logo.png" class="img-fluid" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="/ar/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-4" href="/ar/#courses">courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-4" href="/ar/#contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-black" href="/ar/jobs.html">jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-black" href="/ar/faq.html">faq</a>
+                        </li>
                     </ul>
-                  </div>
-                    <a href="#contact" class="link-btn">يسجل</a>
-                    <div class="parent">
-                    <p class="image1 login" class="login" title="Login"><b>PayPal</b></p>
-                        <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick" />
-                            <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-                          </form>
-                    </div>
-                    <div class="parent2">
-                      <p class="image3"><b>Stripe/آحرون</b></p>
-                      <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage" title="Login"></a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </header>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4 text-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><span
+                                    class="flag-icon flag-icon-us"></span>
+                                عربي
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fs-4 text-black" href="/ge"><span
+                                            class="flag-icon flag-icon-de"></span> German</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/ch"><span
+                                            class="flag-icon flag-icon-ch"></span> Chinese</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/sp"><span
+                                            class="flag-icon flag-icon-es"></span> Spanish</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/ar"><span
+                                            class="flag-icon flag-icon-ae"></span> Arabic</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/hi"><span
+                                            class="flag-icon flag-icon-in"></span> Hindi</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/fr"><span
+                                            class="flag-icon flag-icon-fr"></span> French</a>
+                                </li>
 
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div class="register ">
+                            <a href="/#contact" class="link-btn">register</a>
+                        </div>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <div class="d-flex flex-column">
+                                <div class="p-2">
+                                    <i class="fa fa-paypal fs-4">Paypal</i>
+                                </div>
+                                <div class="p-2">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick" />
+                                        <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <input type="image"
+                                            src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif"
+                                            border="0" name="submit"
+                                            title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex flex-column">
+                                <div class="p-2">
+                                    <span class="glyphicon glyphicon-log-in fs-5">Other payments</span>
+                                </div>
+                                <div class="p-2">
+                                    <a href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE">
+                                        <img src="../images/globalPayImage.png" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="home" id="home">
         <div class="container2">
             <div class="row min-vh-100 align-items-center">
                 <div class=" " id="courses">
-                    <div class="test">
-                        <h1>اعجاب</h1>
+                    <div class="alignment">
+                        <h1>Impressum</h1>
                         <div class="section-boxed" id="section-1">
                             <div id="impressum">
                                 <div class="cols-wrapper cols-2">
                                     <div class="col">
                                         <p>&nbsp;</p>
-                                        <h3>بسكويت</h3>
-                                        <p>المسؤول عن محتوى هذا الموقع هو: R التدريس The Learning Hub +49 (0) 176 97 76 16 32 info.rteaching@Gmail.Com ملفات تعريف الارتباط تستخدم بعض مواقع الويب ما يسمى بملفات تعريف الارتباط. لا تسبب ملفات تعريف الارتباط أي ضرر لجهاز الكمبيوتر الخاص بك ولا تحتوي على أي فيروسات. تُستخدم ملفات تعريف الارتباط لجعل خدمتنا أكثر سهولة في الاستخدام وفعالية وأمانًا. ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم تخزينها على جهاز الكمبيوتر الخاص بك وحفظها بواسطة متصفحك. معظم ملفات تعريف الارتباط التي نستخدمها تسمى "ملفات تعريف الارتباط الخاصة بالجلسة". ويتم حذفها تلقائيًا في نهاية زيارتك. تظل ملفات تعريف الارتباط الأخرى مخزنة على جهازك حتى تقوم بحذفها. تمكننا ملفات تعريف الارتباط هذه من التعرف على متصفحك في المرة التالية التي تزور فيها. يمكنك ضبط متصفحك بحيث تكون على علم بإعداد ملفات تعريف الارتباط والسماح بملفات تعريف الارتباط فقط في الحالات الفردية، واستبعاد قبول ملفات تعريف الارتباط لحالات معينة أو بشكل عام، وتفعيل الحذف التلقائي لملفات تعريف الارتباط عند إغلاق المتصفح. إذا تم إلغاء تنشيط ملفات تعريف الارتباط، فقد يتم تقييد وظائف هذا الموقع</p>
+                                        <h3>Cookies</h3>
+                                        <p>Imprint Responsible For The Content Of This Website Is: R teaching The
+                                            Learning Hub +49 (0) 176 97 76 16 32 info.rteaching@Gmail.Com Cookies Some
+                                            Of The Websites Use So-Called Cookies. Cookies Do Not Cause Any Damage To
+                                            Your Computer And Do Not Contain Any Viruses. Cookies Are Used To Make Our
+                                            Service More User-Friendly, Effective And Secure. Cookies Are Small Text
+                                            Files That Are Stored On Your Computer And Saved By Your Browser. Most Of
+                                            The Cookies We Use Are So-Called "Session Cookies". They Are Automatically
+                                            Deleted At The End Of Your Visit. Other Cookies Remain Stored On Your Device
+                                            Until You Delete Them. These Cookies Enable Us To Recognize Your Browser The
+                                            Next Time You Visit. You Can Set Your Browser So That You Are Informed About
+                                            The Setting Of Cookies And Only Allow Cookies In Individual Cases, Exclude
+                                            The Acceptance Of Cookies For Certain Cases Or In General, And Activate The
+                                            Automatic Deletion Of Cookies When Closing The Browser. If Cookies Are
+                                            Deactivated, The Functionality Of This Website May Be Restricted</p>
                                         <p>&nbsp;</p>
-                                        <h3>ملفات سجل الخادم</h3>
-                                        <p>يقوم موفر الصفحات تلقائيًا بجمع المعلومات وتخزينها في ما يسمى بملفات سجل الخادم، والتي ينقلها متصفحك إلينا تلقائيًا. هذه هي: نوع المتصفح/إصدار المتصفح، نظام التشغيل المستخدم، عنوان URL المُحيل، اسم المضيف للكمبيوتر الذي يصل، وقت طلب الخادم، لا يمكن تعيين هذه البيانات لأشخاص محددين. لا يتم دمج هذه البيانات مع مصادر البيانات الأخرى. نحن نحتفظ بالحق في التحقق من هذه البيانات لاحقًا إذا علمنا بوجود أدلة ملموسة على الاستخدام غير القانوني.</p>
+                                        <h3>Server-Log-Files</h3>
+                                        <p>The Provider Of The Pages Automatically Collects And Stores Information In
+                                            So-Called Server Log Files, Which Your Browser Automatically Transmits To
+                                            Us. These Are: Browser Type/Browser Version Operating System Used Referrer
+                                            URL Host Name Of The Accessing Computer Time Of The Server Request This Data
+                                            Cannot Be Assigned To Specific People. This Data Is Not Merged With Other
+                                            Data Sources. We Reserve The Right To Subsequently Check This Data If We
+                                            Become Aware Of Concrete Evidence Of Illegal Use.</p>
                                         <p>&nbsp;</p>
-                                        <h3>نموذج الاتصال</h3>
-                                        <p>إذا أرسلت لنا استفسارات عبر نموذج الاتصال أو نموذج التسجيل، فسيتم تخزين التفاصيل الخاصة بك من نموذج الاستفسار، بما في ذلك تفاصيل الاتصال التي قدمتها هناك، لغرض معالجة الاستفسار وفي حالة وجود أسئلة المتابعة. لن نقوم بتمرير هذه البيانات دون موافقتك.</p>
+                                        <h3>Contact Form</h3>
+                                        <p>If You Send Us Inquiries Via The Contact Form Or Registration Form, Your
+                                            Details From The Inquiry Form, Including The Contact Details You Provided
+                                            There, Will Be Stored By Us For The Purpose Of Processing The Inquiry And In
+                                            The Event Of Follow-Up Questions. We Will Not Pass This Data On Without Your
+                                            Consent.</p>
                                         <p>&nbsp;</p>
-                                        <h3>سياسة الخصوصية لاستخدام Google Analytics</h3>
-                                        <p>يستخدم هذا الموقع وظائف خدمة تحليل الويب Google Analytics. المزود هو Google Inc. 1600 Amphitheatre Parkway Mountain View, CA 94043، الولايات المتحدة الأمريكية. يستخدم Google Analytics ما يسمى بـ "ملفات تعريف الارتباط". هذه هي الملفات النصية المخزنة على جهاز الكمبيوتر الخاص بك وتتيح تحليل استخدامك للموقع. عادةً ما يتم نقل المعلومات التي تم إنشاؤها بواسطة ملف تعريف الارتباط حول استخدامك لهذا الموقع إلى خادم Google في الولايات المتحدة الأمريكية وتخزينها هناك. ومع ذلك، نظرًا لتفعيل إخفاء هوية IP على هذا الموقع، سيتم اختصار عنوان IP الخاص بك مسبقًا بواسطة Google داخل الدول الأعضاء في الاتحاد الأوروبي أو في الدول المتعاقدة الأخرى على اتفاقية المنطقة الاقتصادية الأوروبية. فقط في حالات استثنائية سيتم نقل عنوان IP الكامل إلى خادم Google في الولايات المتحدة الأمريكية واختصاره هناك. وبالنيابة عن مشغل هذا الموقع، ستستخدم Google هذه المعلومات لتقييم استخدامك للموقع، وتجميع التقارير عن نشاط الموقع وتزويد مشغل الموقع بخدمات أخرى تتعلق بنشاط الموقع واستخدام الإنترنت. لن يتم دمج عنوان IP الذي يرسله متصفحك كجزء من Google Analytics مع بيانات Google الأخرى. يمكنك منع حفظ ملفات تعريف الارتباط عن طريق ضبط برنامج المتصفح الخاص بك وفقًا لذلك. يمكنك أيضًا منع Google من جمع البيانات التي تم إنشاؤها بواسطة ملف تعريف الارتباط والمتعلقة باستخدامك للموقع (بما في ذلك عنوان IP الخاص بك) ومن معالجة هذه البيانات بواسطة Google عن طريق تنزيل وتثبيت المكون الإضافي للمتصفح المتوفر تحت الرابط التالي: Http //Tools.Google.Com/Dlpage/Gaoptout?Hl=De</p>
+                                        <h3>Privacy Policy For The Use Of Google Analytics</h3>
+                                        <p>This Website Uses Functions Of The Web Analysis Service Google Analytics. The
+                                            Provider Is Google Inc. 1600 Amphitheatre Parkway Mountain View, CA 94043,
+                                            USA. Google Analytics Uses So-Called "Cookies". These Are Text Files That
+                                            Are Stored On Your Computer And Enable An Analysis Of Your Use Of The
+                                            Website. The Information Generated By The Cookie About Your Use Of This
+                                            Website Is Usually Transferred To A Google Server In The USA And Stored
+                                            There. However, Due To The Activation Of IP Anonymisation On This Website,
+                                            Your IP Address Will Be Shortened Beforehand By Google Within Member States
+                                            Of The European Union Or In Other Contracting States To The Agreement On The
+                                            European Economic Area. Only In Exceptional Cases Will The Full IP Address
+                                            Be Transmitted To A Google Server In The USA And Shortened There. On Behalf
+                                            Of The Operator Of This Website, Google Will Use This Information To
+                                            Evaluate Your Use Of The Website, To Compile Reports On Website Activity And
+                                            To Provide The Website Operator With Other Services Relating To Website
+                                            Activity And Internet Usage. The IP Address Transmitted By Your Browser As
+                                            Part Of Google Analytics Will Not Be Merged With Other Google Data. You Can
+                                            Prevent Cookies From Being Saved By Setting Your Browser Software
+                                            Accordingly. You Can Also Prevent Google From Collecting The Data Generated
+                                            By The Cookie And Relating To Your Use Of The Website (Including Your IP
+                                            Address) And From Processing This Data By Google By Downloading And
+                                            Installing The Browser Plug-In Available Under The Following Link:
+                                            Http://Tools.Google.Com/Dlpage/Gaoptout?Hl=De</p>
                                         <p>&nbsp;</p>
-                                        <h3>سياسة الخصوصية لاستخدام يوتيوب</h3>
-                                        <p>يستخدم موقعنا الإلكتروني المكونات الإضافية من موقع YouTube الذي تديره Google. يتم تشغيل الموقع بواسطة YouTube، LLC، 901 Cherry Ave.، San Bruno، CA 94066، USA. عندما تزور إحدى صفحاتنا المجهزة بمكون إضافي لـ YouTube، يتم إنشاء اتصال بخوادم YouTube. يتم إبلاغ خادم YouTube بصفحاتنا التي قمت بزيارتها. إذا قمت بتسجيل الدخول إلى حسابك على YouTube، فإنك تسمح لموقع YouTube بتعيين سلوك التصفح الخاص بك مباشرةً إلى ملفك الشخصي. يمكنك منع ذلك عن طريق تسجيل الخروج من حسابك على YouTube. يمكنك العثور على مزيد من المعلومات حول كيفية التعامل مع بيانات المستخدم في سياسة خصوصية YouTube.
+                                        <h3>Privacy Policy For The Use Of YouTube</h3>
+                                        <p>Our Website Uses Plug-Ins From The YouTube Site Operated By Google. The Site
+                                            Is Operated By YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. When
+                                            You Visit One Of Our Pages Equipped With A YouTube Plug-In, A Connection Is
+                                            Established To The YouTube Servers. The YouTube Server Is Informed Which Of
+                                            Our Pages You Have Visited. If You Are Logged Into Your YouTube Account, You
+                                            Allow YouTube To Assign Your Surfing Behavior Directly To Your Personal
+                                            Profile. You Can Prevent This By Logging Out Of Your YouTube Account. You
+                                            Can Find More Information About How User Data Is Handled In The YouTube
+                                            Privacy Policy.
                                         </p>
                                     </div>
                                     <div class="col nomargin"></div>
@@ -147,28 +242,27 @@
     <br>
     <footer class="footer">
         <div class="footer__addr">
-            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> اتصال <a class="footer__btn" href="mailto:info.R teaching@gmail.com">Email Us</a></h1>
+            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> Contact <a class="footer__btn"
+                    href="mailto:info.rteaching@gmail.com">Email Us</a></h1>
         </div>
 
-        <div >
+        <div>
             <nav class="outer-order">
                 <a href="/" class="inner-order">home</a>
-                <a href="/ar/#courses" class="inner-order">الدورات</a>
-                <!-- <a href="#reviews">reviews</a> -->
-                <a href="/ar/#contact" class="inner-order">اتصال</a>
-                <a href="jobs.html" class="inner-order">وظائف </a>
-                <a href="faq.html" class="inner-order">faq</a>
-                <a href="#about" class="inner-order">about</a>
-                <a href="./impressum.html" class="inner-order">انطباعات</a>
-                <a href="./gtc.html" class="inner-order">GTC</a>
+                <a href="/ar/#courses" class="inner-order">courses</a>
+                <a href="/ar/#contact" class="inner-order">contact</a>
+                <a href="/ar/jobs.html" class="inner-order">jobs </a>
+                <a href="/ar/faq.html" class="inner-order">faq</a>
+                <a href="/ar/impressum.html" class="inner-order">Impressions</a>
+                <a href="/ar/gtc.html" class="inner-order">GTC</a>
             </nav>
-            
+
         </div>
 
         <div class="legal">
-            <p>&copy; COPYRIGHT R teaching. كل الحقوق محفوظة.</p>
+            <p>&copy; COPYRIGHT R teaching. All rights reserved.</p>
         </div>
-</footer>
+    </footer>
     <a href="https://wa.me/918489336961" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
         <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>

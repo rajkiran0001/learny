@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
+    <title>R teaching</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-
-        .container2 {
-            margin-top: 80px;
-
-        }
-
-        .test {
+        .alignment {
             background: rgba(0, 0, 0, 0.5);
             color: white;
             font-size: 20px;
@@ -29,61 +31,126 @@
         .outer-order {
             text-align: center
         }
-
-        /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
     </style>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- bootstrap cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>R teaching</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/en/">
+                    <img src="../images/logo.png" class="img-fluid" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="/en/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-4" href="/en/#courses">courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-4" href="/en/#contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-black" href="/en/jobs.html">jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-black" href="/en/faq.html">faq</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-4 text-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><span
+                                    class="flag-icon flag-icon-us"></span>
+                                English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fs-4 text-black" href="/ge"><span
+                                            class="flag-icon flag-icon-de"></span> German</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/ch"><span
+                                            class="flag-icon flag-icon-ch"></span> Chinese</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/sp"><span
+                                            class="flag-icon flag-icon-es"></span> Spanish</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/ar"><span
+                                            class="flag-icon flag-icon-ae"></span> Arabic</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/hi"><span
+                                            class="flag-icon flag-icon-in"></span> Hindi</a>
+                                </li>
+                                <li><a class="dropdown-item fs-4 text-black" href="/fr"><span
+                                            class="flag-icon flag-icon-fr"></span> French</a>
+                                </li>
 
-    <header class="header fixed-top active">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <img src="/images/logo.png" alt="" class="logo"></img>
-                <nav class="nav">
-                    <a href="/#home">home</a>
-                    <a href="/#kurse">Kurse</a>
-                    <!-- <a href="#reviews">reviews</a> -->
-                    <a href="/#kontakt">Kontakt</a>
-                    <a href="jobs.html">jobs </a>
-                    <a href="faq.html">faq</a>
-                    <!-- <a href="#about">about</a> -->
-                    <div class="parent">
-                    <a class="image1 login" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="login" title="Login"></a>
-                        <form class="image2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick" />
-                            <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-                        </form>
-                    </div>
-                    <div class="parent2">
-                    <p class="image3"><b>Stripe or Andere</b></p>
-                    <a class="image4 payImage" href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE" class="payImage" title="Login"></a>
-                    </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div class="register ">
+                            <a href="/#contact" class="link-btn">register</a>
+                        </div>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
 
-                </nav>
-                <a href="#kontakt" class="link-btn">registrieren</a>
-                <div id="menu-btn" class="fas fa-bars"></div>
+                        <li>
+                            <div class="d-flex flex-column">
+                                <div class="p-2">
+                                    <i class="fa fa-paypal fs-4">Paypal</i>
+                                </div>
+                                <div class="p-2">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick" />
+                                        <input type="hidden" name="hosted_button_id" value="UPVQKDR3VBTWS" />
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <input type="image"
+                                            src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif"
+                                            border="0" name="submit"
+                                            title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex flex-column">
+                                <div class="p-2">
+                                    <span class="glyphicon glyphicon-log-in fs-5">Other payments</span>
+                                </div>
+                                <div class="p-2">
+                                    <a href="https://donate.stripe.com/aEU2bU7q3cWr5byaEE">
+                                        <img src="../images/globalPayImage.png" class="img-fluid" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
-
     <section class="home" id="home">
         <div class="container2">
             <div class="row min-vh-100 align-items-center">
-                <div class=" " id="kurse">
-                    <div class="test">
+                <div class=" " id="courses">
+                    <div class="alignment">
                         <h1>Impressum</h1>
                         <div class="section-boxed" id="section-1">
                             <div id="impressum">
@@ -91,62 +158,71 @@
                                     <div class="col">
                                         <p>&nbsp;</p>
                                         <h3>Cookies</h3>
-                                        <p>Impressum Verantwortlich für den Inhalt dieser Website ist: 
-                                            R teaching The Learning Hub +49 (0) 176 97 76 16 32 info.rteaching@Gmail.Com 
-                                            Cookies Einige der Websites verwenden so genannte Cookies. Cookies richten auf 
-                                            Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu,
-                                            unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind 
-                                            kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser 
-                                            speichert. Die meisten der von uns verwendeten Cookies sind so genannte 
-                                            "Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. 
-                                            Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. 
-                                            Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch 
-                                            wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über 
-                                            das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, 
-                                            die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das 
-                                            automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der 
-                                            Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein</p>
+                                        <p>Imprint Responsible For The Content Of This Website Is: R teaching The
+                                            Learning Hub +49 (0) 176 97 76 16 32 info.rteaching@Gmail.Com Cookies Some
+                                            Of The Websites Use So-Called Cookies. Cookies Do Not Cause Any Damage To
+                                            Your Computer And Do Not Contain Any Viruses. Cookies Are Used To Make Our
+                                            Service More User-Friendly, Effective And Secure. Cookies Are Small Text
+                                            Files That Are Stored On Your Computer And Saved By Your Browser. Most Of
+                                            The Cookies We Use Are So-Called "Session Cookies". They Are Automatically
+                                            Deleted At The End Of Your Visit. Other Cookies Remain Stored On Your Device
+                                            Until You Delete Them. These Cookies Enable Us To Recognize Your Browser The
+                                            Next Time You Visit. You Can Set Your Browser So That You Are Informed About
+                                            The Setting Of Cookies And Only Allow Cookies In Individual Cases, Exclude
+                                            The Acceptance Of Cookies For Certain Cases Or In General, And Activate The
+                                            Automatic Deletion Of Cookies When Closing The Browser. If Cookies Are
+                                            Deactivated, The Functionality Of This Website May Be Restricted</p>
                                         <p>&nbsp;</p>
                                         <h3>Server-Log-Files</h3>
-                                        <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in 
-                                            so genannten Server-Log Files, die Ihr Browser automatisch an uns übermittelt. 
-                                            Dies sind: Browsertyp/ Browserversion verwendetes Betriebssystem Referrer URL 
-                                            Hostname des zugreifenden Rechners Uhrzeit der Serveranfrage Diese Daten sind 
-                                            nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit 
-                                            anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten 
-                                            nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige 
-                                            Nutzung bekannt werden.</p>
+                                        <p>The Provider Of The Pages Automatically Collects And Stores Information In
+                                            So-Called Server Log Files, Which Your Browser Automatically Transmits To
+                                            Us. These Are: Browser Type/Browser Version Operating System Used Referrer
+                                            URL Host Name Of The Accessing Computer Time Of The Server Request This Data
+                                            Cannot Be Assigned To Specific People. This Data Is Not Merged With Other
+                                            Data Sources. We Reserve The Right To Subsequently Check This Data If We
+                                            Become Aware Of Concrete Evidence Of Illegal Use.</p>
                                         <p>&nbsp;</p>
-                                        <h3>Kontakt Formular</h3>
-                                        <p>Wenn Sie uns per Kontaktformular oder Registrierungsformular Anfragen zukommen lassen, 
-                                            werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort 
-                                            angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von 
-                                            Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre 
-                                            Einwilligung weiter.</p>
+                                        <h3>Contact Form</h3>
+                                        <p>If You Send Us Inquiries Via The Contact Form Or Registration Form, Your
+                                            Details From The Inquiry Form, Including The Contact Details You Provided
+                                            There, Will Be Stored By Us For The Purpose Of Processing The Inquiry And In
+                                            The Event Of Follow-Up Questions. We Will Not Pass This Data On Without Your
+                                            Consent.</p>
                                         <p>&nbsp;</p>
-                                        <h3>Datenschutzerklärung für die Nutzung von Google Analytics</h3>
-                                        <p>Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse 
-                                            wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung 
-                                            der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern;
-                                            wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht 
-                                            sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. 
-                                            Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und 
-                                            auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an 
-                                            Google sowie die Verarbeitung dieser Daten durch Google verhindern, 
-                                            indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen 
-                                            und installieren Link: Http://Tools.Google.Com/Dlpage/Gaoptout?Hl=De</p>
+                                        <h3>Privacy Policy For The Use Of Google Analytics</h3>
+                                        <p>This Website Uses Functions Of The Web Analysis Service Google Analytics. The
+                                            Provider Is Google Inc. 1600 Amphitheatre Parkway Mountain View, CA 94043,
+                                            USA. Google Analytics Uses So-Called "Cookies". These Are Text Files That
+                                            Are Stored On Your Computer And Enable An Analysis Of Your Use Of The
+                                            Website. The Information Generated By The Cookie About Your Use Of This
+                                            Website Is Usually Transferred To A Google Server In The USA And Stored
+                                            There. However, Due To The Activation Of IP Anonymisation On This Website,
+                                            Your IP Address Will Be Shortened Beforehand By Google Within Member States
+                                            Of The European Union Or In Other Contracting States To The Agreement On The
+                                            European Economic Area. Only In Exceptional Cases Will The Full IP Address
+                                            Be Transmitted To A Google Server In The USA And Shortened There. On Behalf
+                                            Of The Operator Of This Website, Google Will Use This Information To
+                                            Evaluate Your Use Of The Website, To Compile Reports On Website Activity And
+                                            To Provide The Website Operator With Other Services Relating To Website
+                                            Activity And Internet Usage. The IP Address Transmitted By Your Browser As
+                                            Part Of Google Analytics Will Not Be Merged With Other Google Data. You Can
+                                            Prevent Cookies From Being Saved By Setting Your Browser Software
+                                            Accordingly. You Can Also Prevent Google From Collecting The Data Generated
+                                            By The Cookie And Relating To Your Use Of The Website (Including Your IP
+                                            Address) And From Processing This Data By Google By Downloading And
+                                            Installing The Browser Plug-In Available Under The Following Link:
+                                            Http://Tools.Google.Com/Dlpage/Gaoptout?Hl=De</p>
                                         <p>&nbsp;</p>
-                                        <h3>Datenschutzerklärung für die Nutzung von YouTube</h3>
-                                        <p>Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube. 
-                                            Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno,
-                                            CA 94066, USA. Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten 
-                                            Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. 
-                                            Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.
-                                            Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr 
-                                            Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie 
-                                            verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere 
-                                            Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung 
-                                            von YouTube.
+                                        <h3>Privacy Policy For The Use Of YouTube</h3>
+                                        <p>Our Website Uses Plug-Ins From The YouTube Site Operated By Google. The Site
+                                            Is Operated By YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. When
+                                            You Visit One Of Our Pages Equipped With A YouTube Plug-In, A Connection Is
+                                            Established To The YouTube Servers. The YouTube Server Is Informed Which Of
+                                            Our Pages You Have Visited. If You Are Logged Into Your YouTube Account, You
+                                            Allow YouTube To Assign Your Surfing Behavior Directly To Your Personal
+                                            Profile. You Can Prevent This By Logging Out Of Your YouTube Account. You
+                                            Can Find More Information About How User Data Is Handled In The YouTube
+                                            Privacy Policy.
                                         </p>
                                     </div>
                                     <div class="col nomargin"></div>
@@ -166,27 +242,25 @@
     <br>
     <footer class="footer">
         <div class="footer__addr">
-            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> Kontakt <a class="footer__btn"
-                    href="mailto:info.R teaching@gmail.com">Email Uns</a></h1>
+            <h1 class="footer__logo"><b>R teaching </b><i>The learning hub</i> Contact <a class="footer__btn"
+                    href="mailto:info.rteaching@gmail.com">Email Us</a></h1>
         </div>
 
         <div>
             <nav class="outer-order">
                 <a href="/" class="inner-order">home</a>
-                <a href="/#kurse" class="inner-order">Kurse</a>
-                <!-- <a href="#reviews">reviews</a> -->
-                <a href="/#kontakt" class="inner-order">Kontakt</a>
-                <a href="jobs.html" class="inner-order">jobs </a>
-                <a href="faq.html" class="inner-order">faq</a>
-                <a href="#about" class="inner-order">about</a>
-                <a href="/impressum.html" class="inner-order">Impressions</a>
-                <a href="/gtc.html" class="inner-order">GTC</a>
+                <a href="/en/#courses" class="inner-order">courses</a>
+                <a href="/en/#contact" class="inner-order">contact</a>
+                <a href="/en/jobs.html" class="inner-order">jobs </a>
+                <a href="/en/faq.html" class="inner-order">faq</a>
+                <a href="/en/impressum.html" class="inner-order">Impressions</a>
+                <a href="/en/gtc.html" class="inner-order">GTC</a>
             </nav>
 
         </div>
 
         <div class="legal">
-            <p>&copy; COPYRIGHT R teaching. Alle Rechte vorbehalten.</p>
+            <p>&copy; COPYRIGHT R teaching. All rights reserved.</p>
         </div>
     </footer>
     <a href="https://wa.me/918489336961" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
